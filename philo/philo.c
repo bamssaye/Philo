@@ -72,9 +72,9 @@ void	free_data(t_philo *ph, int nb)
 	if (ph->_dead)
 		free(ph->_dead);
 	if (ph->m_t)
-		free(ph->_dead);
+		free(ph->m_t);
 	if (ph->e_t)
-		free(ph->_dead);
+		free(ph->e_t);
 	if (ph)
 		free(ph);
 }
