@@ -32,7 +32,7 @@ int	ft_atoi(const char *nptr)
 		i++;
 	while (ft_isdigit(nptr[i]))
 		n = 10 * n + nptr[i++] - 48;
-	if (n > 2147483647)
+	if (n > 2147483647 || n < 0)
 		return (-1);
 	if (nptr[i] != '\0')
 		return (-1);
